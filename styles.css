@@ -1,0 +1,207 @@
+/* browser reset*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* formatting for body tag*/
+body {
+    background-size: cover;
+    background-position: center;
+    /* Resize the background image to cover the entire container */
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+
+/* formatting for anchor tags*/
+a {
+    text-decoration: none;
+    /* takes away the underline on anchor tags */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* formatting for visited/unvisited linka*/
+a:link, a:visited {
+    color: white;
+}
+
+/* formatting for hovering cursor over a link*/
+a:hover {
+    background-color: black;
+}
+
+/* navigation formatting*/
+nav a {
+    /* padding shows over the navigation buttons */
+    padding: 25px;
+    display: inline-block;
+    background-color: darkgoldenrod;
+}
+
+/* formatting only for images placed in a div tag*/
+div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+/* header tag border and text alignment*/
+header img {
+    border-style: dotted;
+    border-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* font formatting for heading at top of pages*/
+h2 {
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 5px 5px 5px white, -5px -5px 5px gray;
+    /* the first 5px to the right/left, then down, then how big the shadow is. You can add the comma after the first set to add another shadow layer */
+    /* webkit is to allow a feature that is not yet standardized for all web browsers so you use the webkit prefix to use it for now*/
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+/* sets all headings except h1 to specific font and font size*/
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: x-large;
+}
+
+/* formatting all paragraph tags*/
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+/* container1 formatting*/
+.container1 {
+    width: 70%;
+    margin: auto;
+    color: white;
+    background-color: darkslategray;
+    border-style: inset;
+    border-radius: 5px;
+}
+
+/* container2 formatting*/
+.container2 {
+    width: 70%;
+    margin: auto;
+    color: white;
+    background-color: gray;
+    border-style: outset;
+    border-radius: 5px;
+}
+
+/* footer formatting*/
+footer {
+position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: darkgoldenrod;
+   color: white;
+   text-align: center;
+}
+
+/* table formatting for bait.html*/
+table,
+td,
+th {
+    border: 2px tan solid;
+    opacity: 0.93;
+}
+
+table {
+    margin: 100px 0px 0px 150px;
+    width: 80%;
+    font-family: sans-serif;
+}
+
+th {
+    background-color: olive;
+    font-size: 1.3em;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+td:nth-child(even) {
+    background-color: peru;
+}
+
+td:nth-child(odd) {
+    background-color: rgb(241, 172, 69);
+}
+
+/*list formatting */
+ul {
+    background: gray;
+    padding: 20px;
+    font-size: medium;
+}
+  
+ul li {
+    background: #cce5ff;
+    color: black;
+    margin: 5px;
+}
+
+/* responsive image gallery*/
+div.gallery {
+    border: 1px solid #ccc;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+.responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+.responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
