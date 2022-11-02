@@ -11,7 +11,7 @@ body {
     background-position: center;
     /* Resize the background image to cover the entire container */
     background-repeat: no-repeat;
-    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    background: linear-gradient(to right, #8596c2, #0082c8, #0082c8, #9eaaca);
 }
 
 /* formatting for anchor tags*/
@@ -22,7 +22,8 @@ a {
 }
 
 /* formatting for visited/unvisited linka*/
-a:link, a:visited {
+a:link,
+a:visited {
     color: white;
 }
 
@@ -107,16 +108,11 @@ p {
     border-radius: 5px;
 }
 
-/* footer formatting*/
-footer {
-position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: darkgoldenrod;
-   color: white;
-   text-align: center;
+/* flexbox for photos*/
+#flexbox {
+    display: flex;
 }
+
 
 /* table formatting for bait.html*/
 table,
@@ -140,6 +136,7 @@ th {
 th,
 td {
     padding: 10px;
+    text-align: center;
 }
 
 td:nth-child(even) {
@@ -156,47 +153,28 @@ ul {
     padding: 20px;
     font-size: medium;
 }
-  
+
 ul li {
     background: #cce5ff;
     color: black;
     margin: 5px;
 }
 
-/* responsive image gallery*/
-div.gallery {
-    border: 1px solid #ccc;
-}
-  
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
+footer {
+    background-color: darkgoldenrod;
+    color: white;
     text-align: center;
-    color: black;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-.responsive {
-        width: 49.99999%;
-        margin: 6px 0;
+@media only screen and (max-width: 900px) {
+    body {
+        background: linear-gradient(to right, #00bf8f, #001510);
     }
 }
 
 @media only screen and (max-width: 500px) {
-.responsive {
-        width: 100%;
+    body {
+        background: linear-gradient(to right, #6441a5, #2a0845);
     }
 }
 
