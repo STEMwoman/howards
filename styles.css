@@ -178,3 +178,9 @@ footer {
         background: linear-gradient(to right, #6441a5, #2a0845);
     }
 }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
