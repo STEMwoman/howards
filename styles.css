@@ -40,14 +40,6 @@ nav a {
     background-color: darkgoldenrod;
 }
 
-/* formatting only for images placed in a div tag*/
-div img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-}
-
 /* header tag border and text alignment*/
 header img {
     border-style: dotted;
