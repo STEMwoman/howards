@@ -110,7 +110,7 @@ p {
 }
 
 /* flexbox for photos*/
-#flexbox {
+.flexbox {
     display: flex;
 }
 
