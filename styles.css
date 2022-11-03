@@ -119,7 +119,7 @@ table,
 td,
 th {
     border: 2px tan solid;
-    opacity: 0.93;
+    opacity: 10;
 }
 
 table {
@@ -144,7 +144,7 @@ td:nth-child(even) {
 }
 
 td:nth-child(odd) {
-    background-color: rgb(241, 172, 69);
+    background-color: burlywood;
 }
 
 /*list formatting */
